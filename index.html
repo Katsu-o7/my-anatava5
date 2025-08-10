@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Araba Animasyonu</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    overflow: hidden;
+  }
+  .car-container {
+    animation: drive 6s infinite alternate;
+  }
+  .car-image {
+    width: 300px;
+    height: auto;
+    display: block;
+  }
+  @keyframes drive {
+    0% {
+      transform: translateX(-300px);
+    }
+    100% {
+      transform: translateX(300px);
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="car-container">
+    <img src="https://picsum.photos/800/400?random=1" alt="Rastgele Resim" class="car-image">
+  </div>
+</body>
+</html>
